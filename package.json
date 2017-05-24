@@ -1,0 +1,27 @@
+{
+  "name": "cjbinfo",
+  "version": "1.0.0",
+  "description": "Code for my personal website",
+  "main": "index.js",
+  "scripts": {
+	"devStart": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjordanball/cjbinfo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjordanball/cjbinfo/issues"
+  },
+  "homepage": "https://github.com/cjordanball/cjbinfo#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
