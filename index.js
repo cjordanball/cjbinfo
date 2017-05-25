@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
+	console.log('hit me!');
 	res.send('<h1>Hello Digital Ocean!</h1>');
 });
 
