@@ -1,0 +1,20 @@
+.placeholdImage {
+	width: 50%;
+	margin-left: 25%;
+}
+
+.heading {
+	text-align: center
+}
+
+p {
+	width: 50%;
+	margin-left: 25%;
+	text-align:justify;
+	font-size: 1.2em;
+}
+
+a {
+	position: relative;
+	left: -200px;
+}
