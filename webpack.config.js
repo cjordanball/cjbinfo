@@ -10,7 +10,8 @@ const ChunkWebpack = webpack.optimize.CommonsChunkPlugin;
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 	template: path.resolve(__dirname, 'index.html'),
 	filename: 'index.html',
-	inject: 'body'
+	inject: 'body',
+	favicon: 'assets/images/ballicon.ico'
 });
 
 const ChunkWebpackConfig = new ChunkWebpack({
@@ -33,12 +34,25 @@ const config = {
 			{
 				test: /\.less$/,
 				use: ['style-loader', 'css-loader', 'less-loader']
+			},
+			{
+				test:/\.(jpe?g|png|gif|svg|ico)$/,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							limit: 40000
+						}
+					},
+					'image-webpack-loader'
+				]
 			}
 		]
 	},
 	output: {
 		path: path.join(__dirname, 'dist'),
-		filename: '[name].[chunkhash].js'
+		filename: '[name].[chunkhash].js',
+		publicPath: '/'
 	},
 	resolve: {
 		extensions: ['.js', '.jsx', 'css', '.less']
@@ -50,6 +64,9 @@ const config = {
 			filename: 'index.css',
 			disable: false,
 			allChunks: true
+		}),
+		new webpack.DefinePlugin({
+			'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
 		})
 	],
 	devServer: {
