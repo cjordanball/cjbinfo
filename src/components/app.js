@@ -12,7 +12,7 @@ const App = () => (
 		<a href="http://www.freepik.com/free-photo/warning-zone_953380.htm">Designed by Freepik</a>
 		<div>
 			<p>
-				I recently decided to update this website from front-end to back, to clear out
+				I recently decided to update this website from front to back, to clear out
 				accumulated clutter and to make it more enjoyable and helpful for the user.
 				Currently, I expect to begin placing materials onto the page in the first
 				week of June.  Thank you for your patience.
