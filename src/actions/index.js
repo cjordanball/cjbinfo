@@ -1,7 +1,7 @@
 import axios from 'axios';
 import ActionTypes from './types';
 
-const ROOT_URL = 'https://localhost:3142';
+const ROOT_URL = 'http://localhost:3142';
 
 export function testFunc() {
 	return (dispatch) => {
