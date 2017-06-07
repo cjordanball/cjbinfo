@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/cjordanball/cjbinfo#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-preset-stage-1": "^6.24.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
