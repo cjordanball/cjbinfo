@@ -11,7 +11,7 @@ const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 	template: path.resolve(__dirname, 'index.html'),
 	filename: 'index.html',
 	inject: 'body',
-	favicon: 'assets/images/ballicon.ico'
+	favicon: 'assets/images/ballIcon.ico'
 });
 
 const ChunkWebpackConfig = new ChunkWebpack({
