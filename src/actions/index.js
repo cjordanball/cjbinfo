@@ -1,12 +1,13 @@
 import axios from 'axios';
 import ActionTypes from './types';
 
-const ROOT_URL = 'http://localhost:3142';
+const ROOT_URL = 'http://10.132.91.83:3142';
 
 export function testFunc() {
 	return (dispatch) => {
 		axios.get(`${ROOT_URL}/`)
 			.then((res) => {
+				console.log('res', res);
 				dispatch({
 					type: ActionTypes.TEST_FUNCTION,
 					payload: res.data.hi
