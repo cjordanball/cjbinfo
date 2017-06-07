@@ -36,7 +36,7 @@ const config = {
 				use: ['style-loader', 'css-loader', 'less-loader']
 			},
 			{
-				test:/\.(jpe?g|png|gif|svg|ico)$/,
+				test: /\.(jpe?g|png|gif|svg|ico)$/,
 				use: [
 					{
 						loader: 'url-loader',
