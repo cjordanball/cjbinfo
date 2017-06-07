@@ -35,7 +35,6 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-	console.log('in MSTP', state);
 	return {
 		message: state.test.message
 	};
