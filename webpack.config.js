@@ -55,7 +55,7 @@ const config = {
 		publicPath: '/'
 	},
 	resolve: {
-		extensions: ['.js', '.jsx', 'css', '.less']
+		extensions: ['.js', '.jsx', '.css', '.less']
 	},
 	plugins: [
 		HTMLWebpackPluginConfig,
@@ -70,8 +70,9 @@ const config = {
 		})
 	],
 	devServer: {
+		historyApiFallback: true,
 		contentBase: path.resolve(__dirname, 'dist'),
-		port: 3142
+		port: 3000
 	}
 };
 
