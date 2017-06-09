@@ -1,7 +1,7 @@
 import axios from 'axios';
 import ActionTypes from './types';
 
-const ROOT_URL = 'https://104.236.1.49';
+const ROOT_URL = 'https://cjbinfoapi.com';
 
 export function testFunc() {
 	console.log('testFunc');
