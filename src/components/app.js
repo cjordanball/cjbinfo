@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import construct from '../../assets/images/underConstruction.jpg';
 import * as actions from '../actions';
 
+import Header from './common/header';
 class App extends Component {
 	render() {
-		console.log('props', this.props);
 		return (
 			<div>
+				<Header />
+				<img alt="CJB at beach" id="beachBall" src="/assets/images/beachBall.jpg" />
 				<div className="heading">
 					<h2>You Have Arrived at the Website of</h2>
 					<h1>C. Jordan Ball III</h1>
@@ -19,8 +20,6 @@ class App extends Component {
 						</h3>
 					</div>
 				</div>
-				<img alt="construction site" className="placeholdImage" src={construct} />
-				<a href="http://www.freepik.com/free-photo/warning-zone_953380.htm">Designed by Freepik</a>
 				<div>
 					<p>
 						I recently decided to update this website from front to back, to clear out
