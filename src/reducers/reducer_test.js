@@ -9,6 +9,7 @@ export default (state = INITIAL_STATE, action) => {
 	case ActionTypes.TEST_FUNCTION:
 		return { ...state, message: action.payload };
 	case ActionTypes.AUTH_ERROR:
+		console.log('Autherr');
 		return { ...state, message: action.payload };
 	default:
 		return state;
