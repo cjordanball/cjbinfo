@@ -1,7 +1,23 @@
 import axios from 'axios';
 import ActionTypes from './types';
+import Config from '../../config';
 
-const ROOT_URL = 'https://cjbinfoapi.com';
+export const signInUser = ({ username, password }, history) => {
+	console.log('inSignIn', username, password);
+	return (dispatch) => {
+		axios.post(`${Config.AUTH_PATH}/signin`, { username, password })
+		.then((res) => {
+			dispatch({
+				type: ActionTypes.SIGN_IN_USER
+			});
+			localStorage.setItem('token', res.data.token);
+			history.push('/home');
+		})
+		.catch(({ response }) => {
+			console.log('error', response);
+		});
+	};
+};
 
 export function testFunc() {
 	console.log('testFunc');

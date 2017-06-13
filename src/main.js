@@ -9,15 +9,19 @@ import reducers from './reducers';
 import '../styles/styles.less';
 import Header from './components/common/header';
 import FrontPage from './components/frontPage/frontPage';
+import SignInPage from './components/authComponents/signin';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 
 ReactDOM.render(
 	<Provider store={createStoreWithMiddleware(reducers)}>
 		<BrowserRouter>
-			<div>
+			<div className="container">
 				<Header />
-				<Route path="/" component={FrontPage} />
+				<Switch>
+					<Route path="/signin" component={SignInPage} />
+					<Route path="/" component={FrontPage} />
+				</Switch>
 			</div>
 		</BrowserRouter>
 	</Provider>, document.querySelector('#root'));
