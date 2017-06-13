@@ -4,9 +4,8 @@ import BoxChoice from './boxes';
 const Selections = props => (
 	<div className="selections">
 		<BoxChoice text="Signin" destination="/signin" />
-		<BoxChoice text="Register" destination="/signin" />
-		<BoxChoice text="Monkey" destination="/signin" />
-		<BoxChoice text="Beatles" destination="/signin" />
+		<BoxChoice text="Register" destination="/signup" />
+		<BoxChoice text="Continue as Guest" destination="/home" />
 	</div>
 );
 
