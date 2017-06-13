@@ -28,7 +28,7 @@ class SignUpPage extends Component {
 				<h2>
 					Please register!
 				</h2>
-				<form onSubmit={handleSubmit(value => this.onFormSubmit(values))}>
+				<form onSubmit={handleSubmit(values => this.onFormSubmit(values))}>
 					<Field
 						label="Username"
 						name="username"
@@ -65,4 +65,6 @@ export default reduxForm(
 	{
 		form: 'SignUpForm',
 		fields: ['username', 'email', 'password', 'passwordConfirm']
-	})(SignUpPage);
+	})(
+		connect(null, actions)(SignUpPage)
+	);
