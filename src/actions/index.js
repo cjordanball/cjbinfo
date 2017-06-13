@@ -22,13 +22,9 @@ export const signInUser = ({ username, password }, history) => {
 export function testFunc() {
 	console.log('testFunc');
 	return (dispatch) => {
-		axios.get(`${ROOT_URL}/`)
+		axios.get(`${Config.API_PATH}/`)
 			.then((res) => {
-				console.log('res', res);
-				dispatch({
-					type: ActionTypes.TEST_FUNCTION,
-					payload: res.data.hi
-				});
+				dispatch({ type: ActionTypes.TEST_FUNCTION, payload: res.data.hi });
 			})
 			.catch((error) => {
 				dispatch(authError('Redux: Ok,  AJAX: Error'));
