@@ -41,6 +41,13 @@ export const signUpUser = ({ username, email, password }, history) => (
 	}
 );
 
+export const logOutUser = () => {
+	localStorage.removeItem('token');
+	return {
+		type: ActionTypes.LOG_OUT_USER
+	};
+};
+
 export function testFunc() {
 	return (dispatch) => {
 		axios.get(`${Config.API_PATH}/`)
