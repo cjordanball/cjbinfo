@@ -19,6 +19,23 @@ export const signInUser = ({ username, password }, history) => {
 	};
 };
 
+export const signUpUser = ({ username, email, password }, history) => {
+	console.log('inSignUp', username, email, password);
+	return (dispatch) => {
+		axios.post(`${Config.AUTH_PATH}/signin`, { username, email, password })
+		.then((res) => {
+			dispatch({
+				type: ActionTypes.SIGN_UP_USER
+			});
+			localStorage.setItem('token', res.data.token);
+			history.push('/home');
+		})
+		.catch(({ response }) => {
+			console.log('error', response);
+		});
+	};
+};
+
 export function testFunc() {
 	console.log('testFunc');
 	return (dispatch) => {
