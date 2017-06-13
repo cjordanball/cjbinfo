@@ -14,6 +14,7 @@ import SignInPage from './components/authComponents/signin';
 import SignUpPage from './components/authComponents/signup';
 import HomePage from './components/home';
 import LogOutPage from './components/authComponents/signout';
+import ResumePage from './components/resume';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers);
@@ -25,15 +26,18 @@ if (token) {
 ReactDOM.render(
 	<Provider store={store}>
 		<BrowserRouter>
-			<div className="container">
+			<div>
 				<Header />
-				<Switch>
-					<Route path="/signin" component={SignInPage} />
-					<Route path="/signup" component={SignUpPage} />
-					<Route path="/home" component={HomePage} />
-					<Route path="/logout" component={LogOutPage} />
-					<Route path="/" component={FrontPage} />
-				</Switch>
+				<div className="container">
+					<Switch>
+						<Route path="/signin" component={SignInPage} />
+						<Route path="/signup" component={SignUpPage} />
+						<Route path="/home" component={HomePage} />
+						<Route path="/logout" component={LogOutPage} />
+						<Route path="/resume" component={ResumePage} />
+						<Route path="/" component={FrontPage} />
+					</Switch>
+				</div>
 			</div>
 		</BrowserRouter>
 	</Provider>, document.querySelector('#root'));

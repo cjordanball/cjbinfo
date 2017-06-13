@@ -10,7 +10,8 @@
         "no-console": ["error", allow: ["log"]],
         "react/jsx-indent-props": [2, 'tab'],
         "comma-dangle": ["error", "never"],
-        "class-methods-use-this": ["off"]
+        "class-methods-use-this": ["off"],
+        "max-len": ["off"]
     },
     "globals": {
         "document": false,

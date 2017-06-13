@@ -7,23 +7,32 @@ import BallLogo from '../../../assets/images/BallLogoHD.png';
 class Header extends Component {
 	render() {
 		return (
-			<div id="header">
+			<nav className="navbar navbar-toggleable-md navbar-light bg-faded">
 				<img id="logo" alt="logo" src={BallLogo} />
-				Ball Dev
-				<button onClick={() => this.props.testFunc()}>Press Me</button>
-				{this.props.message ? this.props.message : null}
-				<ul>
+				<Link to="/">Ball Dev</Link>
+				<ul className="nav navbar-nav">
 					{this.props.logStatus ? (
-						<li>
-							<Link to="/logout">Sign Out</Link>
+						<li className="nav-item" key="signout">
+							<Link className="nav-link" to="/logout">Sign Out</Link>
 						</li>
-					) : (
-						<li key="signin">
-							<Link to="/">Sign in / Register</Link>
+					) : ([
+						<li className="nav-item" key="signin">
+							<Link className="nav-link" to="/signin">Sign in</Link>
+						</li>,
+						<li className="nav-item" key="signup">
+							<Link className="nav-link" to="/signup">Register</Link>
 						</li>
-					)}
+					])}
 				</ul>
-			</div>
+				<div className="navbar-toggler-right">
+					<ul className="nav navbar-nav">
+						<li className="nav-item">
+							<Link className="nav-link" to="/resume">Resume</Link>
+						</li>
+					</ul>
+					{this.props.userName ? this.props.userName : null}
+				</div>
+			</nav>
 		);
 	}
 }
@@ -31,7 +40,8 @@ class Header extends Component {
 const mapStateToProps = state => (
 	{
 		message: state.test.message,
-		logStatus: state.auth.logStatus
+		logStatus: state.auth.logStatus,
+		userName: state.auth.userName
 	}
 );
 

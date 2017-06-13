@@ -14,6 +14,7 @@ class SignUpPage extends Component {
 			<fieldset className="form-group">
 				<label htmlFor={field.name}>{field.label}</label>
 				<input
+					className="form-control"
 					type={field.type}
 					{...field.input}
 				/>
@@ -26,7 +27,7 @@ class SignUpPage extends Component {
 		return (
 			<div>
 				<h2>
-					Please register!
+					Please Register!
 				</h2>
 				<form onSubmit={handleSubmit(values => this.onFormSubmit(values))}>
 					<Field
@@ -53,7 +54,7 @@ class SignUpPage extends Component {
 						name="passwordConfirm"
 						component={this.renderField}
 					/>
-					<button type="submit">Register</button>
+				<button type="submit" className="btn btn-primary">Register</button>
 				</form>
 			</div>
 		);
