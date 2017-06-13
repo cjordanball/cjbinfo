@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import reducers from './reducers';
 import '../styles/styles.less';
-import ActionTypes from './actions/Types';
+import ActionTypes from './actions/types';
 import Header from './components/common/header';
 import FrontPage from './components/frontPage/frontPage';
 import SignInPage from './components/authComponents/signin';
