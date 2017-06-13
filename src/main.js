@@ -10,6 +10,7 @@ import '../styles/styles.less';
 import Header from './components/common/header';
 import FrontPage from './components/frontPage/frontPage';
 import SignInPage from './components/authComponents/signin';
+import HomePage from './components/home';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 
@@ -20,6 +21,7 @@ ReactDOM.render(
 				<Header />
 				<Switch>
 					<Route path="/signin" component={SignInPage} />
+					<Route path="/home" component={HomePage} />
 					<Route path="/" component={FrontPage} />
 				</Switch>
 			</div>
