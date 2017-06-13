@@ -14,7 +14,10 @@ export const signInUser = ({ username, password }, history) => (
 		axios.post(`${Config.AUTH_PATH}/signin`, { username, password })
 		.then((res) => {
 			dispatch({
-				type: ActionTypes.SIGN_IN_USER
+				type: ActionTypes.SIGN_IN_USER,
+				payload: {
+					userName: username
+				}
 			});
 			localStorage.setItem('token', res.data.token);
 			history.push('/home');
@@ -30,7 +33,10 @@ export const signUpUser = ({ username, email, password }, history) => (
 		axios.post(`${Config.AUTH_PATH}/signup`, { username, email, password })
 		.then((res) => {
 			dispatch({
-				type: ActionTypes.SIGN_UP_USER
+				type: ActionTypes.SIGN_UP_USER,
+				payload: {
+					userName: username
+				}
 			});
 			localStorage.setItem('token', res.data.token);
 			history.push('/home');

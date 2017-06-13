@@ -11,9 +11,10 @@ class SignInPage extends Component {
 
 	renderField(field) {
 		return (
-			<fieldset>
+			<fieldset className="form-group">
 				<label htmlFor={field.name}>{field.label}</label>
 				<input
+					className="form-control"
 					type={field.type}
 					{...field.input}
 				/>
@@ -41,7 +42,7 @@ class SignInPage extends Component {
 						name="password"
 						component={this.renderField}
 					/>
-					<button type="submit">Sign in</button>
+				<button type="submit" className="btn btn-primary">Sign in</button>
 				</form>
 			</div>
 		);
