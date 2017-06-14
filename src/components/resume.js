@@ -203,7 +203,8 @@ const ResumePage = () => (
 											The first two-thirds of this twelve-week course were implemented in C, followed by sections addressing the Internet, web applications, and computer security, utilizing PHP, JavaScript, MySQL and other common web languages / technologies. Graded assignments consisted of nine problem sets plus a  final project.
 										</p>
 										<p>
-											Topics covered included:<br />
+											Topics covered included:
+										</p>
 										<ul>
 											<li>C syntax and programming structures;</li>
 											<li>debugging techniques, particularly use of the gdb debugging tool;</li>
@@ -212,7 +213,6 @@ const ResumePage = () => (
 											<li>memory allocation and management, including use of pointers, heap and stack memory;</li>
 											<li>file input/output, both dynamically and at the command line.</li>
 										</ul>
-										</p>
 									</td>
 								</tr>
 								<tr>
