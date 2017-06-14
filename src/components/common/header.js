@@ -9,7 +9,7 @@ class Header extends Component {
 		return (
 			<nav className="navbar navbar-toggleable-md navbar-light bg-faded">
 				<img id="logo" alt="logo" src={BallLogo} />
-				<Link to="/">Ball Dev</Link>
+				<Link className="headerTitle" to="/">Ball Dev</Link>
 				<ul className="nav navbar-nav">
 					{this.props.logStatus ? (
 						<li className="nav-item" key="signout">
