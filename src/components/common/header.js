@@ -29,8 +29,10 @@ class Header extends Component {
 						<li className="nav-item">
 							<Link className="nav-link" to="/resume">Resume</Link>
 						</li>
+						<li className="nav-link">
+							{this.props.userName ? `Welcome, ${this.props.userName}!` : null}
+						</li>
 					</ul>
-					{this.props.userName ? this.props.userName : null}
 				</div>
 			</nav>
 		);

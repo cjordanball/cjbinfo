@@ -28,7 +28,7 @@ ReactDOM.render(
 		<BrowserRouter>
 			<div>
 				<Header />
-				<div className="container">
+				<div className="innerContainer container">
 					<Switch>
 						<Route path="/signin" component={SignInPage} />
 						<Route path="/signup" component={SignUpPage} />
