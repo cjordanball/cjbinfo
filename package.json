@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "NODE_ENV=production npm run clean && webpack -p",
-    "serve": "NODE_ENV=test webpack-dev-server -w",
+    "serve": "NODE_ENV=development webpack-dev-server -w",
     "test": "echo \"Error: no test specified\" && exit "
   },
   "repository": {
