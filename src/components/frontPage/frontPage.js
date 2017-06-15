@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Picture from './picture';
-import config from '../../../config';
 
 const FrontPage = () => (
 	<div>
@@ -11,7 +10,6 @@ const FrontPage = () => (
 					<Picture />
 				</div>
 				<div className="row justify-content-md-center">
-					<h2>Env: {config.ENVIRONMENT}</h2>
 					<h2>C. Jordan Ball III</h2>
 					<h4>Web Developer</h4>
 					<h5>React | Angular2 | Node</h5>
