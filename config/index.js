@@ -13,6 +13,7 @@ default:
 }
 
 module.exports = {
+	ENVIRONMENT,
 	AUTH_PATH,
 	API_PATH
 };
