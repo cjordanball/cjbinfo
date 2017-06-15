@@ -66,7 +66,7 @@ const config = {
 			allChunks: true
 		}),
 		new webpack.EnvironmentPlugin({
-			NODE_ENV: 'development'
+			NODE_ENV: 'production'
 		})
 	],
 	devServer: {
