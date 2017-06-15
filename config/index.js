@@ -8,7 +8,7 @@ case 'production':
 	API_PATH = 'https://cjbinfoapi.com';
 	break;
 default:
-	AUTH_PATH = 'http://localhost:3142';
+	AUTH_PATH = 'http://localhost:3142/auth';
 	API_PATH = 'http://localhost:8080';
 }
 

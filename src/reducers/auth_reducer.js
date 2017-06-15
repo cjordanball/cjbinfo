@@ -15,6 +15,8 @@ export default (state = INITIAL_STATE, action) => {
 		return { ...state, logStatus: true, userName: action.payload.userName };
 	case ActionTypes.LOG_OUT_USER:
 		return { ...state, logStatus: false, userName: '' };
+	case ActionTypes.AUTH_ERROR:
+		return { ...state, error: action.payload };
 	default:
 		return state;
 	}

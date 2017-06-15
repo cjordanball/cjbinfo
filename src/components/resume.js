@@ -158,7 +158,7 @@ const ResumePage = () => (
 			<div className="card-header" role="tab" id="headingFive">
 				<h5 className="mb-0">
 					<a className="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-						Education (Programing Related)
+						Education (Programming Related)
 					</a>
 				</h5>
 			</div>

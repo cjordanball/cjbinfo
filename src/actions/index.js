@@ -42,7 +42,10 @@ export const signUpUser = ({ username, email, password }, history) => (
 			history.push('/home');
 		})
 		.catch(({ response }) => {
-			console.log('error', response);
+			dispatch({
+				type: ActionTypes.AUTH_ERROR,
+				payload: response.data.error
+			});
 		});
 	}
 );

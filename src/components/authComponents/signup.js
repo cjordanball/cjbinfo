@@ -3,6 +3,8 @@ import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
+// validations
+
 class SignUpPage extends Component {
 
 	onFormSubmit({ username, email, password }) {
@@ -18,8 +20,23 @@ class SignUpPage extends Component {
 					type={field.type}
 					{...field.input}
 				/>
+				{field.meta.touched && field.meta.error && !field.meta.active ? (
+					<div className="errorMessage">
+						{field.meta.error || field.meta.warning}
+					</div>
+				) : null}
 			</fieldset>
 		);
+	}
+
+	renderAlert() {
+		const message = this.props.errorMessage;
+
+		return message ? (
+			<div className="alert alert-danger">
+				<strong>Oops!</strong> {message}
+			</div>
+		) : null;
 	}
 
 	render() {
@@ -54,18 +71,46 @@ class SignUpPage extends Component {
 						name="passwordConfirm"
 						component={this.renderField}
 					/>
-				<button type="submit" className="btn btn-primary">Register</button>
+				{this.renderAlert()}
+					<button type="submit" className="btn btn-primary">Register</button>
 				</form>
 			</div>
 		);
 	}
 }
 
+const validate = (values) => {
+	const errors = {};
+
+	if (!values.username) {
+		errors.username = 'Username is required!';
+	}
+	if ((values.email) && !(/.+@.+\..+/.test(values.password))) {
+		errors.email = 'Please enter a valid email address!';
+	}
+	if (!values.password) {
+		errors.password = 'Password is required for registration.';
+	}
+	if (!values.passwordConfirm) {
+		errors.passwordConfirm = 'Please re-enter the password.';
+	}
+	if (values.password !== values.passwordConfirm) {
+		errors.passwordConfirm = 'Check your password - entries do not match!';
+	}
+	return errors;
+};
+
+const mapStateToProps = state => (
+	{
+		errorMessage: state.auth.error
+	}
+);
 
 export default reduxForm(
 	{
 		form: 'SignUpForm',
-		fields: ['username', 'email', 'password', 'passwordConfirm']
+		fields: ['username', 'email', 'password', 'passwordConfirm'],
+		validate
 	})(
-		connect(null, actions)(SignUpPage)
+		connect(mapStateToProps, actions)(SignUpPage)
 	);
