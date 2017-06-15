@@ -71,7 +71,7 @@ class SignUpPage extends Component {
 						name="passwordConfirm"
 						component={this.renderField}
 					/>
-				{this.renderAlert()}
+					{this.renderAlert()}
 					<button type="submit" className="btn btn-primary">Register</button>
 				</form>
 			</div>
@@ -85,7 +85,7 @@ const validate = (values) => {
 	if (!values.username) {
 		errors.username = 'Username is required!';
 	}
-	if ((values.email) && !(/.+@.+\..+/.test(values.password))) {
+	if ((values.email) && !(/.+@.+\..+/.test(values.email))) {
 		errors.email = 'Please enter a valid email address!';
 	}
 	if (!values.password) {
