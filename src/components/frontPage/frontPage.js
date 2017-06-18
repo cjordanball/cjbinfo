@@ -30,15 +30,13 @@ const FrontPage = () => (
 				</div>
 				<div className="row justify-content-md-center">
 					<Link to="/home">
-						<button className="btn lightButton">Be my guest!</button>
+						<button className="btn btn-primary">Enter as guest!</button>
 					</Link>
 				</div>
 				<div className="row justify-content-md-center">
 					<h1>Updates</h1>
 					<ul>
-						<li>14 June 2017: Site is being launched!</li>
-						<li>15 June 2017: Adding initial batch of problems and solutions to the ByteBites feature. Over the next few weeks I plan to add solutions to all problems, updated to employ the latest Javascript syntax (ES6 +), together with unit testing on all problems.
-						</li>
+						<li>22 June 2017: Adding initial batch of problems and solutions to the ByteBites feature. Over the next few weeks solutions to all problems will be addd, updated to employ the latest Javascript syntax (ES6 +), together with unit testing on all problems.</li>
 					</ul>
 				</div>
 			</div>
