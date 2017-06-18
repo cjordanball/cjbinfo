@@ -1,0 +1,29 @@
+.cjbButton {
+	display: inline-block;
+	// background-color: @boxes-background;
+	font-weight: bold;
+	padding: 10px 30px;
+	font-size: 1.5em;
+	border: 1px solid #2d6898;
+	border-radius: 5px;
+	// background-image: linear-gradient(bottom, rgb(73, 132, 180)0%, rgb(97, 155, 203), 100%);
+	background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(73,132,180)),
+        color-stop(1, rgb(97,155,203))
+    );
+}
+
+.cjbButton:hover {
+// background-image: linear-gradient(bottom, rgb(79,142,191) 0%, rgb(102,166,214), 100%);
+
+   background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(79,142,191)),
+    color-stop(1, rgb(102,166,214))
+   );
+}

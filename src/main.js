@@ -3,18 +3,14 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reduxThunk from 'redux-thunk';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import reducers from './reducers';
+import Tracker from './hocs/ga_tracker';
 import '../styles/styles.less';
 import ActionTypes from './actions/types';
-import Header from './components/common/header';
-import FrontPage from './components/frontPage/frontPage';
-import SignInPage from './components/authComponents/signin';
-import SignUpPage from './components/authComponents/signup';
-import HomePage from './components/home';
-import LogOutPage from './components/authComponents/signout';
-import ResumePage from './components/resume';
+import App from './components/app';
+
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers);
@@ -26,18 +22,6 @@ if (token) {
 ReactDOM.render(
 	<Provider store={store}>
 		<BrowserRouter>
-			<div>
-				<Header />
-				<div className="innerContainer container">
-					<Switch>
-						<Route path="/signin" component={SignInPage} />
-						<Route path="/signup" component={SignUpPage} />
-						<Route path="/home" component={HomePage} />
-						<Route path="/logout" component={LogOutPage} />
-						<Route path="/resume" component={ResumePage} />
-						<Route path="/" component={FrontPage} />
-					</Switch>
-				</div>
-			</div>
+			<Route component={Tracker(App)} />
 		</BrowserRouter>
 	</Provider>, document.querySelector('#root'));
