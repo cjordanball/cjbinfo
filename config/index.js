@@ -1,4 +1,4 @@
-const ENVIRONMENT = process.env.NODE_ENV;
+const ENVIRONMENT = process.env.NODE_ENV || 'production';
 let AUTH_PATH;
 let API_PATH;
 
