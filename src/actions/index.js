@@ -69,3 +69,29 @@ export function testFunc() {
 			});
 	};
 }
+
+export const solveSudoku = (numList) => {
+	return (dispatch) => {
+		axios.post(`${Config.API_PATH}/sudoku`, { numList })
+		.then((res) => {
+			console.log('res', res.data.puzzleArr);
+			dispatch({
+				type: ActionTypes.SOLVE_SUDOKU,
+				payload: res.data.puzzleArr
+			})
+		})
+		.catch((error) => {
+			console.log('ERR: ', error);
+			dispatch(authError('Unable to connect'));
+		});
+	};
+};
+
+export const clearSudoku = () => {
+	const emptyArray = Array(81).fill('', 0, 81);
+
+	return {
+		type: ActionTypes.SOLVE_SUDOKU,
+		payload: emptyArray
+	};
+};
