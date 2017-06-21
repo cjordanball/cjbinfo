@@ -1,10 +1,9 @@
 import React from 'react';
+import ClickBox from './common/clickBox';
 
 const HomePage = () => (
 	<div>
-		<h1>
-			Welcome to the homepage.
-		</h1>
+		<ClickBox title="Sudoku Solver" target="/sudoku" />
 	</div>
 );
 
