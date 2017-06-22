@@ -31,8 +31,8 @@ class SudokuComponent extends Component {
 				</div>
 				<div className="fullBoard">
 					<Board fullSolutionArray={fullSolutionArray} />
-					<button onClick={() => this.clickHandler()}>Show Solution</button>
-					<button onClick={() => this.clearHandler()}>Clear Board</button>
+					<button className="btn btn-primary" onClick={() => this.clickHandler()}>Show Solution</button>
+					<button className="btn btn-primary" onClick={() => this.clearHandler()}>Clear Board</button>
 				</div>
 			</div>
 		);

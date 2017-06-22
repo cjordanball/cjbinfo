@@ -11,6 +11,9 @@ class Header extends Component {
 				<img id="logo" alt="logo" src={BallLogo} />
 				<Link className="headerTitle" to="/">Ball Dev</Link>
 				<ul className="nav navbar-nav">
+					<li className="nav-item" key="home">
+						<Link className={this.props.atHome ? 'nav-link' : 'homeButton nav-link'} to="/home">Home</Link>
+					</li>
 					{this.props.logStatus ? (
 						<li className="nav-item" key="signout">
 							<Link className="nav-link" to="/logout">Sign Out</Link>
@@ -27,7 +30,7 @@ class Header extends Component {
 				<div className="navbar-toggler-right">
 					<ul className="nav navbar-nav">
 						<li className="nav-item">
-							<Link className="nav-link" to="/resume">Resume</Link>
+							<Link className="nav-link" to="/resume">View Résumé</Link>
 						</li>
 						<li className="nav-link">
 							{this.props.userName ? `Welcome, ${this.props.userName}!` : null}
@@ -43,7 +46,8 @@ const mapStateToProps = state => (
 	{
 		message: state.test.message,
 		logStatus: state.auth.logStatus,
-		userName: state.auth.userName
+		userName: state.auth.userName,
+		atHome: state.route.home
 	}
 );
 
