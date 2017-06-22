@@ -74,7 +74,6 @@ export const solveSudoku = (numList) => {
 	return (dispatch) => {
 		axios.post(`${Config.API_PATH}/sudoku`, { numList })
 		.then((res) => {
-			console.log('res', res.data.puzzleArr);
 			dispatch({
 				type: ActionTypes.SOLVE_SUDOKU,
 				payload: res.data.puzzleArr
