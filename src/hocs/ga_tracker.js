@@ -5,7 +5,7 @@ import config from '../../config';
 GA.initialize('UA-101099588-1');
 
 const withTracker = (Comp) => {
-	if (config.production === 'production') {
+	if (config.ENVIRONMENT === 'production') {
 		const trackPage = (page) => {
 			GA.set({ page });
 			GA.pageview(page);
