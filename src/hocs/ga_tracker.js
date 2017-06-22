@@ -6,6 +6,7 @@ GA.initialize('UA-101099588-1');
 
 const withTracker = (Comp) => {
 	if (config.ENVIRONMENT === 'production') {
+		console.log('prod')
 		const trackPage = (page) => {
 			GA.set({ page });
 			GA.pageview(page);
@@ -19,6 +20,7 @@ const withTracker = (Comp) => {
 		};
 		return HOC;
 	}
+	console.log('notprod');
 	return () => <Comp />;
 };
 
