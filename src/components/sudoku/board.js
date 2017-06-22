@@ -12,10 +12,10 @@ class BoardComponent extends Component {
 	render() {
 		const RowList = this.data.numbers.map((val, ind) => {
 			const arrSlice = this.props.fullSolutionArray ? this.props.fullSolutionArray.slice(ind * 9, (ind + 1) * 9) : '';
-			return <RowComponent rowSolutionArray={arrSlice} key={ind} />
+			return <RowComponent vert={ind} rowSolutionArray={arrSlice} key={ind} />
 		});
 		return (
-			<div>
+			<div className='board'>
 				{RowList}
 			</div>
 		);

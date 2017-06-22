@@ -3,6 +3,7 @@
 	width: 40px;
 	font-size: 18px;
 	text-align: center;
+	border: 1px solid @sudoku-lines;
 }
 
 .fullBoard {
@@ -28,4 +29,17 @@
 
 .chosen {
 	color: @hot-text;
+}
+
+.rightline {
+	border-right: 2px solid @sudoku-lines;
+}
+.leftline {
+	border-left: 2px solid @sudoku-lines;
+}
+.bottomline {
+	border-bottom: 2px solid @sudoku-lines;
+}
+.topline {
+	border-top: 2px solid @sudoku-lines;
 }

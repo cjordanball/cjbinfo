@@ -78,7 +78,7 @@ export const solveSudoku = (numList) => {
 			dispatch({
 				type: ActionTypes.SOLVE_SUDOKU,
 				payload: res.data.puzzleArr
-			})
+			});
 		})
 		.catch((error) => {
 			console.log('ERR: ', error);
@@ -93,5 +93,12 @@ export const clearSudoku = () => {
 	return {
 		type: ActionTypes.SOLVE_SUDOKU,
 		payload: emptyArray
+	};
+};
+
+export const setHome = (onHome) => {
+	return {
+		type: ActionTypes.SET_HOME,
+		payload: onHome
 	};
 };

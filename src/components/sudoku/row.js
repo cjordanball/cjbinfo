@@ -11,7 +11,7 @@ class RowComponent extends Component {
 	render() {
 		const BoxList = this.data.numbers.map((val, ind) => {
 			const arrValue = this.props.rowSolutionArray ? this.props.rowSolutionArray[ind] : '';
-			return <BoxComponent boxValue={arrValue} key={ind} />
+			return <BoxComponent vert={this.props.vert} horiz={ind} boxValue={arrValue} key={ind} />
 		});
 		return (
 			<div>

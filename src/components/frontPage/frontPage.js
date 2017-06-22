@@ -29,15 +29,15 @@ const FrontPage = () => (
 					</p>
 				</div>
 				<div className="row justify-content-md-center">
+					<h1>Updates</h1>
+					<p>
+						<strong>Just Added:</strong> Go to the home page to try out my Sudoku-Solver app. Admittedly, I'm not sure why anyone would want to use it, it was a lot of fun to create.
+					</p>
+				</div>
+				<div className="row justify-content-md-center">
 					<Link to="/home">
 						<button className="btn btn-primary">Enter as guest!</button>
 					</Link>
-				</div>
-				<div className="row justify-content-md-center">
-					<h1>Updates</h1>
-					<ul>
-						<li>22 June 2017: Adding initial batch of problems and solutions to the ByteBites feature. Over the next few weeks solutions to all problems will be addd, updated to employ the latest Javascript syntax (ES6 +), together with unit testing on all problems.</li>
-					</ul>
 				</div>
 			</div>
 		</div>

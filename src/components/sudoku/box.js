@@ -32,13 +32,24 @@ class BoxComponent extends Component {
 	}
 
 	render() {
-		console.log('boxVal', this.props.boxValue);
+		const classes = {
+			rightline: (this.props.horiz % 3 === 2),
+			leftline: (this.props.horiz % 3 === 0),
+			bottomline: (this.props.vert % 3 === 2),
+			topline: (this.props.vert % 3 === 0),
+			chosen: (this.state.original),
+			gridBox: true
+		};
+
+		let properties = Object.keys(classes);
+		properties = properties.filter(val => classes[val]).join(' ');
+
 		return (
 			<input
 				value={this.state.value}
 				onChange={event => this.boxUpdate(event.target.value, 'orig')}
 				type="text"
-				className={this.state.original ? 'gridBox chosen' : 'gridBox'}
+				className={properties}
 			/>
 		);
 	}
