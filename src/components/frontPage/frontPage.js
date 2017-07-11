@@ -31,7 +31,7 @@ const FrontPage = () => (
 				<div className="row justify-content-md-center">
 					<h1>Updates</h1>
 					<p>
-						<strong>Just Added:</strong> Go to the home page to try out my Sudoku-Solver app. Admittedly, I'm not sure why anyone would want to use it, it was a lot of fun to create.
+						<strong>11 July 2017:</strong> Resume can now be downloaded as a .pdf file!
 					</p>
 				</div>
 				<div className="row justify-content-md-center">

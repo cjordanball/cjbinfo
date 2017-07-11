@@ -101,3 +101,17 @@ export const setHome = (onHome) => {
 		payload: onHome
 	};
 };
+
+export const onResume = () => {
+	return {
+		type: ActionTypes.RESUME,
+		payload: true
+	};
+}
+
+export const offResume = () => {
+	return {
+		type: ActionTypes.RESUME,
+		payload: false
+	};
+}

@@ -46,6 +46,11 @@ const config = {
 					},
 					'image-webpack-loader'
 				]
+			},
+			{
+				test: /\.pdf$/,
+				loader: 'file-loader?name=[path][name].[ext]',
+				//include: paths
 			}
 		]
 	},

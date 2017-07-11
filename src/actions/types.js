@@ -6,7 +6,8 @@ const ActionTypes = {
 	LOG_OUT_USER: 'LOG_OUT_USER',
 	AUTH_ERROR: 'AUTH_ERROR',
 	SOLVE_SUDOKU: 'SOLVE_SUDOKU',
-	SET_HOME: 'SET_HOME'
+	SET_HOME: 'SET_HOME',
+	RESUME: 'RESUME'
 };
 
 export default ActionTypes;
