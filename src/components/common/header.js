@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import BallLogo from '../../../assets/images/BallLogoHD.png';
+import Resume from '../../../assets/docs/201707resume.pdf';
 
 class Header extends Component {
 	render() {
@@ -30,7 +31,7 @@ class Header extends Component {
 				<div className="navbar-toggler-right">
 					<ul className="nav navbar-nav">
 						<li className="nav-item">
-							<Link className="nav-link" to="/resume">View Résumé</Link>
+							{!this.props.resume ? <Link className="nav-link" to="/resume">View Résumé</Link> : <a href={Resume}  download>Download .pdf</a> }
 						</li>
 						<li className="nav-link">
 							{this.props.userName ? `Welcome, ${this.props.userName}!` : null}
@@ -47,7 +48,8 @@ const mapStateToProps = state => (
 		message: state.test.message,
 		logStatus: state.auth.logStatus,
 		userName: state.auth.userName,
-		atHome: state.route.home
+		atHome: state.route.home,
+		resume: state.route.resume
 	}
 );
 
