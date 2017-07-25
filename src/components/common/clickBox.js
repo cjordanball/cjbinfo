@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import sudokuImage from '../../../assets/images/su_doku.jpg';
-import outlineImage from '../../../assets/images/ng4Outline.png';
+import outlineImage from '../../../assets/images/Ng4Outline.png';
 
 const ClickBoxComponent = props => (
 	<Link to={props.target}>

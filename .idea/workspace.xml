@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03242970-0041-4d66-aca2-d815fd6fd5c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/Ng4Outline.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/outlines/outlines.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/app.js" afterPath="$PROJECT_DIR$/src/components/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/common/clickBox.js" afterPath="$PROJECT_DIR$/src/components/common/clickBox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/frontPage/frontPage.js" afterPath="$PROJECT_DIR$/src/components/frontPage/frontPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/home.js" afterPath="$PROJECT_DIR$/src/components/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/components.less" afterPath="$PROJECT_DIR$/styles/components.less" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,10 +17,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="frontPage.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="frontPage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/frontPage/frontPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
+            <state relative-caret-position="196">
               <caret line="35" column="141" lean-forward="false" selection-start-line="35" selection-start-column="141" selection-end-line="35" selection-end-column="141" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -51,6 +45,29 @@
             <state relative-caret-position="318">
               <caret line="77" column="3" lean-forward="false" selection-start-line="77" selection-start-column="3" selection-end-line="77" selection-end-column="3" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clickBox.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/common/clickBox.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="65" lean-forward="true" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <marker date="1500949385000" expanded="true" signature="570:598" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,10 +102,10 @@
         <option value="$PROJECT_DIR$/src/components/app.js" />
         <option value="$PROJECT_DIR$/styles/components.less" />
         <option value="$PROJECT_DIR$/src/components/home.js" />
-        <option value="$PROJECT_DIR$/src/components/common/clickBox.js" />
         <option value="$PROJECT_DIR$/src/components/outlines/outlines.js" />
         <option value="$PROJECT_DIR$/styles/root.less" />
         <option value="$PROJECT_DIR$/src/components/frontPage/frontPage.js" />
+        <option value="$PROJECT_DIR$/src/components/common/clickBox.js" />
       </list>
     </option>
   </component>
@@ -302,12 +319,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499737796148</updated>
       <workItem from="1499737798760" duration="4442000" />
-      <workItem from="1500936336101" duration="7555000" />
+      <workItem from="1500936336101" duration="7846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11997000" />
+    <option name="totallyTimeSpent" value="12288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="162" width="1280" height="617" extended-state="0" />
@@ -443,14 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -549,17 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/clickBox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="104" lean-forward="false" selection-start-line="11" selection-start-column="104" selection-end-line="11" selection-end-column="104" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1500944928000" expanded="true" signature="570:598" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -572,10 +570,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/frontPage/frontPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
+        <state relative-caret-position="196">
           <caret line="35" column="141" lean-forward="false" selection-start-line="35" selection-start-column="141" selection-end-line="35" selection-end-column="141" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/clickBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="65" lean-forward="true" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1500949385000" expanded="true" signature="570:598" ph="..." />
           </folding>
         </state>
       </provider>
