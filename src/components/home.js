@@ -14,7 +14,12 @@ class HomePage extends Component {
 	render() {
 		return (
 			<div>
-				<ClickBox title="Sudoku Solver" target="/sudoku" />
+				<div>
+					<ClickBox title="Sudoku Solver" imageName="sudoku" target="/sudoku" />
+				</div>
+				<div>
+					<ClickBox title="Outlines" imageName="outlines" target="/outlines" />
+				</div>
 			</div>
 		);
 	}

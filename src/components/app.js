@@ -8,6 +8,7 @@ import LogOutPage from './authComponents/signout';
 import ResumePage from './resume';
 import SudokuPage from './sudoku';
 import HomePage from './home';
+import OutlinesPage from './outlines/outlines';
 import Tracker from '../hocs/ga_tracker';
 
 const AppComponent = () => (
@@ -23,6 +24,7 @@ const AppComponent = () => (
 						<Route path="/sudoku" component={Tracker(SudokuPage)} />
 						<Route path="/logout" component={Tracker(LogOutPage)} />
 						<Route path="/resume" component={Tracker(ResumePage)} />
+						<Route path="/outlines" component={Tracker(OutlinesPage)} />
 						<Route exact path="/" component={Tracker(FrontPage)} />
 					</Switch>
 				</div>

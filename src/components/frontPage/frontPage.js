@@ -30,6 +30,11 @@ const FrontPage = () => (
 				</div>
 				<div className="row justify-content-md-center">
 					<h1>Updates</h1>
+				</div>
+				<div className="row justify-content-md-left">
+					<p>
+						<strong>24 July 2017:</strong> Outlines available on a number of JavaScript subjects! Angular4, React, Webpack, and more!
+					</p>
 					<p>
 						<strong>11 July 2017:</strong> Resume can now be downloaded as a .pdf file!
 					</p>
